@@ -1,5 +1,5 @@
 # language: en
-Feature: Append two strings method
+Feature: Append two strings second method
 
   Scenario: Second method appending
     Given 2 args "some1" and "some2"

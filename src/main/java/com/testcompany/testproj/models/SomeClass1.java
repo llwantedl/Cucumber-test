@@ -1,4 +1,4 @@
-package com.testcompany.test;
+package com.testcompany.testproj.models;
 
 public class SomeClass1 {
     public String someFunction1(String arg1, String arg2){
