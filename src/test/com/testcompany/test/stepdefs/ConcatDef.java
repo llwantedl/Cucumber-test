@@ -7,7 +7,7 @@ import cucumber.api.java.en.When;
 
 import static org.junit.Assert.assertEquals;
 
-public class SomeClass1Def {
+public class ConcatDef {
 
     private String string1;
     private String string2;
@@ -21,11 +21,18 @@ public class SomeClass1Def {
         string2 = arg2;
     }
 
-    @When("user do append")
-    public void userDoAppend() {
+    @When("user do first method append")
+    public void userDoAppendFirstMethod() {
         System.out.println("user append " + string1 + " and " + string2);
 
         resultString = new SomeClass1().someFunction1(string1, string2);
+    }
+
+    @When("user do second method append")
+    public void userDoAppendSecondMethod() {
+        System.out.println("user append " + string1 + " and " + string2);
+
+        resultString = new SomeClass1().someFailFunction2(string1, string2);
     }
 
     @Then("user receive result {string}")

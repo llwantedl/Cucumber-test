@@ -1,7 +1,7 @@
 # language: en
 Feature: Append two strings method
 
-  Scenario: First method appending
+  Scenario: Second method appending
     Given 2 args "some1" and "some2"
-    When user do first method append
+    When user do second method append
     Then user receive result "some1some2"
