@@ -1,14 +1,12 @@
-package com.testcompany.test.stepdefs;
+package com.testcompany.testproj.testpart.defs;
 
-import com.testcompany.test.SomeClass1;
+import com.testcompany.testproj.models.SomeClass1;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
 
-import static org.junit.Assert.assertEquals;
-
-public class ConcatDef {
-
+public class FirstConcatMethodDef {
     private String string1;
     private String string2;
     private String resultString;
@@ -39,6 +37,6 @@ public class ConcatDef {
     public void userReceive(String arg1) {
         System.out.println("user receive answer " + arg1);
 
-        assertEquals(resultString, arg1);
+        Assert.assertEquals(resultString, arg1);
     }
 }
