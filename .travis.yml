@@ -5,7 +5,7 @@ deploy:
   github_token: "$GITHUB_TOKEN"
   keep_history: true
   on:
-    branch: staging
+    branch: master
 env:
   global:
     secure: dLV5jqjG39JIR73IJCZsSiMwEpcupknRjRdoltHNlIYFVFJRxRCIZMjIaf+OUgSHOy9UAe5rJSJ3JVggL0cg8yALWfpt3eswTQBnHipLW5iRTqfeArfW5sMPdqSarTU+6nxL8a8ewddhngNPtugy6io+1ti08ICuAqZGyxIC4oAGXEcMg+5U6+mKOzUY757iFblFQ8huxoJIUEul2vXB7yE2qMO1s3O9U3oHQ05iT+zlwmd+7Fwwi032abBsEKH2O+iLvYiTgG4Bu3cwlD4CvsN2JasJz2mfRBxM6clIhaRZx9J9+Lb/BWVVI2WFYhkrOYRl7mA6Ybm5tH0rmXNbjkAwlqNfeKlkRIWddh/QLA8mY8bfVtAA8TFZb5sG92FARhzTJZY93qtux+VE6eKmZOE3IYehuoeHQPcWjHKpvkigCbYlNQLpcQ2ptMjkqdNEMGG8NRREK6qM1Go+A7Zmu6HTrJ7kwIFZ05+moPZHhITqmmGNoWGIz5Tm+YEvbaG1PtpWyO/ulLevBOoh3hNWSpq4vd3FWvnX2mZTmmRC/MYM+Sp1oIj/poYA0fstYpClE4eQtF0O6TmiwXnxcRdgp20pQYTQkMT4gzPdoB2ex+yM8IciaHqhdVJ1TdfcMRHXwKbh04KaM3O5l4k1e4aLZWhDHfjR6u8neHzAGGsJEfM=
