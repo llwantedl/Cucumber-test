@@ -6,16 +6,16 @@ deploy:
   keep_history: true
   on:
     branch: master
-
 branches:
   only:
-    - master
+  - master
 before_script:
-  - git config --global user.email "llwantedl@gmail.com"
-  - git config --global user.name "llwantedl"
-  - git remote rm origin
-  - git remote add origin https://llwantedl:${GH_TOKEN}@github.com/llwantedl/Cucumber-test
-  - echo HELLO
+- git config --global user.email "llwantedl@gmail.com"
+- git config --global user.name "llwantedl"
+- git remote rm origin
+- git remote add origin https://llwantedl:${GH_TOKEN}@github.com/llwantedl/Cucumber-test
+- set GITHUB_TOKEN
 env:
   global:
-    secure: dLV5jqjG39JIR73IJCZsSiMwEpcupknRjRdoltHNlIYFVFJRxRCIZMjIaf+OUgSHOy9UAe5rJSJ3JVggL0cg8yALWfpt3eswTQBnHipLW5iRTqfeArfW5sMPdqSarTU+6nxL8a8ewddhngNPtugy6io+1ti08ICuAqZGyxIC4oAGXEcMg+5U6+mKOzUY757iFblFQ8huxoJIUEul2vXB7yE2qMO1s3O9U3oHQ05iT+zlwmd+7Fwwi032abBsEKH2O+iLvYiTgG4Bu3cwlD4CvsN2JasJz2mfRBxM6clIhaRZx9J9+Lb/BWVVI2WFYhkrOYRl7mA6Ybm5tH0rmXNbjkAwlqNfeKlkRIWddh/QLA8mY8bfVtAA8TFZb5sG92FARhzTJZY93qtux+VE6eKmZOE3IYehuoeHQPcWjHKpvkigCbYlNQLpcQ2ptMjkqdNEMGG8NRREK6qM1Go+A7Zmu6HTrJ7kwIFZ05+moPZHhITqmmGNoWGIz5Tm+YEvbaG1PtpWyO/ulLevBOoh3hNWSpq4vd3FWvnX2mZTmmRC/MYM+Sp1oIj/poYA0fstYpClE4eQtF0O6TmiwXnxcRdgp20pQYTQkMT4gzPdoB2ex+yM8IciaHqhdVJ1TdfcMRHXwKbh04KaM3O5l4k1e4aLZWhDHfjR6u8neHzAGGsJEfM=
+  - secure: dLV5jqjG39JIR73IJCZsSiMwEpcupknRjRdoltHNlIYFVFJRxRCIZMjIaf+OUgSHOy9UAe5rJSJ3JVggL0cg8yALWfpt3eswTQBnHipLW5iRTqfeArfW5sMPdqSarTU+6nxL8a8ewddhngNPtugy6io+1ti08ICuAqZGyxIC4oAGXEcMg+5U6+mKOzUY757iFblFQ8huxoJIUEul2vXB7yE2qMO1s3O9U3oHQ05iT+zlwmd+7Fwwi032abBsEKH2O+iLvYiTgG4Bu3cwlD4CvsN2JasJz2mfRBxM6clIhaRZx9J9+Lb/BWVVI2WFYhkrOYRl7mA6Ybm5tH0rmXNbjkAwlqNfeKlkRIWddh/QLA8mY8bfVtAA8TFZb5sG92FARhzTJZY93qtux+VE6eKmZOE3IYehuoeHQPcWjHKpvkigCbYlNQLpcQ2ptMjkqdNEMGG8NRREK6qM1Go+A7Zmu6HTrJ7kwIFZ05+moPZHhITqmmGNoWGIz5Tm+YEvbaG1PtpWyO/ulLevBOoh3hNWSpq4vd3FWvnX2mZTmmRC/MYM+Sp1oIj/poYA0fstYpClE4eQtF0O6TmiwXnxcRdgp20pQYTQkMT4gzPdoB2ex+yM8IciaHqhdVJ1TdfcMRHXwKbh04KaM3O5l4k1e4aLZWhDHfjR6u8neHzAGGsJEfM=
+  - secure: u+qhXs2zjyNCcTM+pMl6PJV+CyfkM5lH9Ct2bSYTHZl8Pc5LhFlH9qkLM2VNBJ4AlIfyPLIsuPDnBfCtaoVHR8WFt3I1RpmoxMBxwIf2odz7Q71ElRY1i9+iAeTrxl6BoxOTcPrh8GWwIw8j3RBIjc9Chh2nCB8lFTsepF0P4dT5fm/XujanF8QbfBD7Nwbr6NRDn2VE7AUtcZESKMmIRvb/SNf0PBdUi3k/R0P1PJ55GtR2gHoEpE2P/skl3JPDqe5yvWPbqeRAkJe/d8wgkaeWV0FTYUj/OpFPNFbdQ1sHKA7renfshVoN5Ai80gXsJRfm3nd7jBiA64QWlDZWBun17bm+lTPx7GULMGAyxglcX5skrr+oJzHuPbhop9ucWotcGiO0+8nixr/8fEeU4PGwfR4fWHcDzp4ooyXBgsiwDx0MQ9FTM64TC7ub2cvTHsp8l8hqVJE8nin+IcNpEsQoDrosLWyi4HvYX1QloOAlgHNgYqyxi4H+oVdtjA3cmYAPPaXKAl/DrBc99z96p6YT1RoYOezZfvYUrTd+nxPlMoJNjX2aZ+0YDtnWMAI5VbAAQhhAMy6KzIAUDPXlsBt9azemDUqzuJX77gkl0Dbbh0Sv9piZuWOUFSkhjzepBk8OkPhjtmSv/t0U+R+BhF2Iq25Un1ZweZublwYz4JE=
